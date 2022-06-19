@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="today-city-weather">
+        <div class="today">
+            <span class="today-date">0월 0일 0요일</span>
+            <span class="today-clock">00:00:00</span>
+        </div>
+        <div class="city-weather">
+            <span class="city"></span>
+            <span class="weather"></span>
+        </div>
+    </header>
+    
+    <main class="main-todo">
+        <form class="login-form">
+            <div class="login-form_div">
+                <input type="text" placeholder="이름을 입력해주세요"/>
+                <input type="submit" value="Enter"/>
+            </div>
+            
+        </form>
+        
+        <h1 class="greeting hidden"></h1>
+
+        <form class="todo-form hidden">
+            <input class="todo-input" required type="text" placeholder="오늘 할 일을 적어주세요"/>
+        </form>
+        <ul class="todo-list"></ul>
+    </main>
+    
+    <div class="bible">
+        <span class="bible-verse"></span>
+        <span class="bible-index"></span>
+    </div>
+<script src="js/greeting.js"></script>
+<script src="js/background.js"></script>
+<script src="js/today.js"></script>
+<script src="js/bible.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather.js"></script>
+
+</body>
+
+</html>
