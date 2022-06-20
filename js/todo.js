@@ -19,14 +19,17 @@ function paintToDos(newToDoObj){
     const li = document.createElement("li");
     li.id = newToDoObj.id;
     toDoList.appendChild(li);
+    li.classList.add("todo-li")
 
     const span = document.createElement("span");
     span.innerText = newToDoObj.text;
     li.appendChild(span);
+    span.classList.add("todo-span")
 
     const button = document.createElement("button");
     button.innerText = "X";
     li.appendChild(button);
+    button.classList.add("delete-button");
 
     button.addEventListener("click", deleteToDos);
 }

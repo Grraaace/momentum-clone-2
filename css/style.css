@@ -31,11 +31,11 @@ body{
 }
 
 .today-date{
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 5px;
 }
 .today-clock{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .city-weather{
@@ -45,39 +45,43 @@ body{
 }
 
 .city{
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 
 .weather{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .main-todo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 .login-form input:first-child{
     text-align: center;
     border-style: none;
-    width: 500px;
+    width: 800px;
     padding: 10px 5px 10px 5px;
-    font-size: 50px;
+    font-size: 70px;
     border-bottom: 2px solid black;
     font-weight: 800;
     background-color: transparent;
     margin-bottom: 10px;
+    transition: 1s ease-in-out;
+    color: white;
 }
 
 .login-form input:focus{
     outline: none;
+    border-bottom: 2px solid white;
+
 }
 
 .login-form input:first-child::placeholder{
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
     color: white;
     opacity: 70%;
@@ -96,10 +100,14 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .greeting{
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 800;
     margin-bottom: 20px;
+    color: white;
+    opacity: 70%;
+    margin-bottom: 50px;
 }
 
 .todo-form{
@@ -109,11 +117,54 @@ body{
 }
 
 .todo-input{
-    width: 200px;
+    width: 500px;
+    height: 40px;
+    border-style: none;
+    background-color: transparent;
+    padding: 3px;
+    transition: 1s ease-in-out;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.todo-input::placeholder{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    opacity: 70%;
+}
+
+.todo-input:focus{
+    outline: none;
+    border-bottom: 2px solid white;
 }
 
 .todo-list{
     text-align: center;
+}
+
+.todo-li{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.delete-button{
+    padding: 5px 8px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    border : 3px solid white;
+    background-color: transparent;
 }
 
 .bible{
@@ -125,4 +176,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.bible-index{
+    font-size: 20px;
+    font-weight: 400;
 }
