@@ -1,6 +1,7 @@
 @import "reset.css";
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 .hidden{
     display: none;
@@ -153,6 +154,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Gowun Dodum', sans-serif;
 }
 
 
@@ -179,6 +181,7 @@ body{
     color: black;
     font-size: 30px;
     font-weight: 800;
+    
 }
 
 .bible-index{
